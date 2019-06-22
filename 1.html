@@ -1,0 +1,582 @@
+<html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2013年12月北京空气质量指数AQI_PM2.5日历史数据_中国空气质量在线监测分析平台历史数据</title>
+<meta name="keywords" content="北京PM2.5历史数据,北京PM2.5历史数据查询,北京空气质量指数历史数据查询,中国空气质量在线监测分析平台">
+<meta name="description" content="北京2013年12月PM2.5日历史数据,北京PM2.5历史数据查询,北京空气质量指数历史数据查询,中国空气质量在线监测分析平台历史数据">
+<meta http-equiv="refresh" content="300">
+<link rel="shortcut icon" href="../resource/icons/logo.png">
+<link rel="stylesheet" type="text/css" href="resource/css/bootstrap.css">
+<link rel="stylesheet" href="resource/css/style.css?v=1.1" type="text/css">
+</head>
+<body style="">
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container" style="padding:0px 0px 0 10px">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/historydata/" style="padding:0px"><img src="resource/img/logo.png" width="148px" height="50px"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/historydata/">空气质量</a></li>
+        <li><a href="weather.php">历史天气</a></li>
+        <li><a href="../" target="_blank">分析平台</a></li>
+        <li><a href="https://map.zq12369.com" target="_blank">风场地图</a></li>
+<!--         <li><a href="http://blog.aqistudy.cn" target="_blank">官方博客</a></li> -->
+        <!-- <li><a href="http://bbs.aqistudy.cn" target="_blank">交流论坛</a></li> -->
+        <li><a href="weixin.php">微信平台</a></li>
+        <li><a href="sponsor.php">友情赞助</a></li>
+        <li><a href="about.php">关于</a></li>
+      </ul>
+
+      <form class="navbar-form navbar-right" role="search" action="monthdata.php">
+         <div class="form-group">
+            <input type="text" class="form-control" placeholder="请输入要查询的城市名" name="city" value="北京">
+         </div>
+         <button type="submit" class="btn btn-default">提交</button>
+      </form>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+  <div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
+     <!-- 轮播（Carousel）指标 -->
+     <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+     </ol>
+     <!-- 轮播（Carousel）项目 -->
+     <div class="carousel-inner">
+        <div class="item" style="height:300px;">
+           <img src="resource/img/air2.jpg" alt="Second slide" width="100%">
+           <div class="carousel-caption biaoyu">科学发展，生态优先，环境改善，环保先行！</div>
+        </div>
+        <div class="item " style="height:300px;">
+           <img src="resource/img/air1.jpg" alt="First slide" width="100%">
+           <div class="carousel-caption biaoyu">同呼吸、共担当、齐行动，改善空气质量，从我做起！</div>
+        </div>
+        <div class="item active" style="height:300px;">
+           <img src="resource/img/air3.jpg" alt="Third slide" width="100%">
+           <div class="carousel-caption biaoyu">生命来源自然，健康来自环保！</div>
+        </div>
+     </div>
+     <!-- 轮播（Carousel）导航 -->
+     <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+     <a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+  </div>
+<h2 id="title">2013年12月北京空气质量指数日历史数据</h2>
+<div class="container">
+  <div class="row">
+  <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12" style="padding:0 5px">
+  <table width="100%" class="table table-condensed table-bordered table-striped table-hover table-responsive" style="margin-bottom:5px">
+      <tbody><tr height="38px">
+        <th align="center" style="background:#d9edf7">日期</th>
+        <th align="center" style="background:#d9edf7">AQI</th>
+        <th align="center" style="background:#d9edf7" width="80px">质量等级</th>
+        <th align="center" style="background:#d9edf7">PM2.5</th>
+        <th align="center" style="background:#d9edf7">PM10</th>
+        <th align="center" style="background:#d9edf7" class="hidden-xs">SO2</th>
+        <th align="center" style="background:#d9edf7" class="hidden-xs">CO</th>
+        <th align="center" style="background:#d9edf7" class="hidden-xs">NO2</th>
+        <th align="center" style="background:#d9edf7" class="hidden-xs">O3_8h</th>
+      </tr>
+        <tr>        <td align="center">2013-12-02</td>        <td align="center">142</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#fa0;color:black;">轻度污染</span></td>        <td align="center">109</td>        <td align="center">138</td>        <td align="center" class="hidden-xs">61</td>        <td align="center" class="hidden-xs">2.6</td>        <td align="center" class="hidden-xs">88</td>        <td align="center" class="hidden-xs">11</td>      </tr>      <tr>        <td align="center">2013-12-03</td>        <td align="center">86</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">64</td>        <td align="center">86</td>        <td align="center" class="hidden-xs">38</td>        <td align="center" class="hidden-xs">1.6</td>        <td align="center" class="hidden-xs">54</td>        <td align="center" class="hidden-xs">45</td>      </tr>      <tr>        <td align="center">2013-12-04</td>        <td align="center">109</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#fa0;color:black;">轻度污染</span></td>        <td align="center">82</td>        <td align="center">101</td>        <td align="center" class="hidden-xs">42</td>        <td align="center" class="hidden-xs">2</td>        <td align="center" class="hidden-xs">62</td>        <td align="center" class="hidden-xs">23</td>      </tr>      <tr>        <td align="center">2013-12-05</td>        <td align="center">56</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">39</td>        <td align="center">56</td>        <td align="center" class="hidden-xs">30</td>        <td align="center" class="hidden-xs">1.2</td>        <td align="center" class="hidden-xs">38</td>        <td align="center" class="hidden-xs">52</td>      </tr>      <tr>        <td align="center">2013-12-06</td>        <td align="center">169</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#ff401a;color:white;">中度污染</span></td>        <td align="center">128</td>        <td align="center">162</td>        <td align="center" class="hidden-xs">48</td>        <td align="center" class="hidden-xs">2.5</td>        <td align="center" class="hidden-xs">78</td>        <td align="center" class="hidden-xs">15</td>      </tr>      <tr>        <td align="center">2013-12-07</td>        <td align="center">291</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#d20040;color:white;">重度污染</span></td>        <td align="center">241</td>        <td align="center">285</td>        <td align="center" class="hidden-xs">64</td>        <td align="center" class="hidden-xs">4.2</td>        <td align="center" class="hidden-xs">98</td>        <td align="center" class="hidden-xs">6</td>      </tr>      <tr>        <td align="center">2013-12-08</td>        <td align="center">223</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#d20040;color:white;">重度污染</span></td>        <td align="center">173</td>        <td align="center">189</td>        <td align="center" class="hidden-xs">47</td>        <td align="center" class="hidden-xs">2.9</td>        <td align="center" class="hidden-xs">60</td>        <td align="center" class="hidden-xs">41</td>      </tr>      <tr>        <td align="center">2013-12-09</td>        <td align="center">26</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#43ce17;color:black;">优</span></td>        <td align="center">11</td>        <td align="center">16</td>        <td align="center" class="hidden-xs">10</td>        <td align="center" class="hidden-xs">0.6</td>        <td align="center" class="hidden-xs">22</td>        <td align="center" class="hidden-xs">51</td>      </tr>      <tr>        <td align="center">2013-12-10</td>        <td align="center">45</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#43ce17;color:black;">优</span></td>        <td align="center">21</td>        <td align="center">45</td>        <td align="center" class="hidden-xs">14</td>        <td align="center" class="hidden-xs">1</td>        <td align="center" class="hidden-xs">29</td>        <td align="center" class="hidden-xs">52</td>      </tr>      <tr>        <td align="center">2013-12-11</td>        <td align="center">30</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#43ce17;color:black;">优</span></td>        <td align="center">19</td>        <td align="center">30</td>        <td align="center" class="hidden-xs">15</td>        <td align="center" class="hidden-xs">0.7</td>        <td align="center" class="hidden-xs">30</td>        <td align="center" class="hidden-xs">45</td>      </tr>      <tr>        <td align="center">2013-12-12</td>        <td align="center">29</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#43ce17;color:black;">优</span></td>        <td align="center">16</td>        <td align="center">29</td>        <td align="center" class="hidden-xs">11</td>        <td align="center" class="hidden-xs">0.8</td>        <td align="center" class="hidden-xs">25</td>        <td align="center" class="hidden-xs">56</td>      </tr>      <tr>        <td align="center">2013-12-13</td>        <td align="center">66</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">48</td>        <td align="center">63</td>        <td align="center" class="hidden-xs">29</td>        <td align="center" class="hidden-xs">1.3</td>        <td align="center" class="hidden-xs">45</td>        <td align="center" class="hidden-xs">29</td>      </tr>      <tr>        <td align="center">2013-12-14</td>        <td align="center">56</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">40</td>        <td align="center">48</td>        <td align="center" class="hidden-xs">29</td>        <td align="center" class="hidden-xs">1.2</td>        <td align="center" class="hidden-xs">41</td>        <td align="center" class="hidden-xs">46</td>      </tr>      <tr>        <td align="center">2013-12-15</td>        <td align="center">64</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">46</td>        <td align="center">55</td>        <td align="center" class="hidden-xs">31</td>        <td align="center" class="hidden-xs">1.5</td>        <td align="center" class="hidden-xs">49</td>        <td align="center" class="hidden-xs">31</td>      </tr>      <tr>        <td align="center">2013-12-16</td>        <td align="center">134</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#fa0;color:black;">轻度污染</span></td>        <td align="center">102</td>        <td align="center">126</td>        <td align="center" class="hidden-xs">59</td>        <td align="center" class="hidden-xs">2.5</td>        <td align="center" class="hidden-xs">70</td>        <td align="center" class="hidden-xs">10</td>      </tr>      <tr>        <td align="center">2013-12-17</td>        <td align="center">80</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">59</td>        <td align="center">41</td>        <td align="center" class="hidden-xs">35</td>        <td align="center" class="hidden-xs">1.4</td>        <td align="center" class="hidden-xs">39</td>        <td align="center" class="hidden-xs">42</td>      </tr>      <tr>        <td align="center">2013-12-18</td>        <td align="center">45</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#43ce17;color:black;">优</span></td>        <td align="center">29</td>        <td align="center">45</td>        <td align="center" class="hidden-xs">22</td>        <td align="center" class="hidden-xs">0.9</td>        <td align="center" class="hidden-xs">32</td>        <td align="center" class="hidden-xs">43</td>      </tr>      <tr>        <td align="center">2013-12-19</td>        <td align="center">63</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">45</td>        <td align="center">60</td>        <td align="center" class="hidden-xs">30</td>        <td align="center" class="hidden-xs">1.2</td>        <td align="center" class="hidden-xs">50</td>        <td align="center" class="hidden-xs">35</td>      </tr>      <tr>        <td align="center">2013-12-20</td>        <td align="center">45</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#43ce17;color:black;">优</span></td>        <td align="center">30</td>        <td align="center">45</td>        <td align="center" class="hidden-xs">28</td>        <td align="center" class="hidden-xs">1.1</td>        <td align="center" class="hidden-xs">46</td>        <td align="center" class="hidden-xs">47</td>      </tr>      <tr>        <td align="center">2013-12-21</td>        <td align="center">82</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">61</td>        <td align="center">81</td>        <td align="center" class="hidden-xs">43</td>        <td align="center" class="hidden-xs">1.6</td>        <td align="center" class="hidden-xs">69</td>        <td align="center" class="hidden-xs">30</td>      </tr>      <tr>        <td align="center">2013-12-22</td>        <td align="center">179</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#ff401a;color:white;">中度污染</span></td>        <td align="center">135</td>        <td align="center">178</td>        <td align="center" class="hidden-xs">67</td>        <td align="center" class="hidden-xs">2.8</td>        <td align="center" class="hidden-xs">95</td>        <td align="center" class="hidden-xs">14</td>      </tr>      <tr>        <td align="center">2013-12-23</td>        <td align="center">166</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#ff401a;color:white;">中度污染</span></td>        <td align="center">126</td>        <td align="center">166</td>        <td align="center" class="hidden-xs">62</td>        <td align="center" class="hidden-xs">2.9</td>        <td align="center" class="hidden-xs">90</td>        <td align="center" class="hidden-xs">30</td>      </tr>      <tr>        <td align="center">2013-12-24</td>        <td align="center">269</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#d20040;color:white;">重度污染</span></td>        <td align="center">219</td>        <td align="center">268</td>        <td align="center" class="hidden-xs">94</td>        <td align="center" class="hidden-xs">4.8</td>        <td align="center" class="hidden-xs">123</td>        <td align="center" class="hidden-xs">10</td>      </tr>      <tr>        <td align="center">2013-12-25</td>        <td align="center">219</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#d20040;color:white;">重度污染</span></td>        <td align="center">169</td>        <td align="center">219</td>        <td align="center" class="hidden-xs">65</td>        <td align="center" class="hidden-xs">3.3</td>        <td align="center" class="hidden-xs">94</td>        <td align="center" class="hidden-xs">54</td>      </tr>      <tr>        <td align="center">2013-12-26</td>        <td align="center">30</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#43ce17;color:black;">优</span></td>        <td align="center">10</td>        <td align="center">20</td>        <td align="center" class="hidden-xs">9</td>        <td align="center" class="hidden-xs">0.4</td>        <td align="center" class="hidden-xs">21</td>        <td align="center" class="hidden-xs">59</td>      </tr>      <tr>        <td align="center">2013-12-27</td>        <td align="center">23</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#43ce17;color:black;">优</span></td>        <td align="center">16</td>        <td align="center">21</td>        <td align="center" class="hidden-xs">19</td>        <td align="center" class="hidden-xs">0.6</td>        <td align="center" class="hidden-xs">34</td>        <td align="center" class="hidden-xs">40</td>      </tr>      <tr>        <td align="center">2013-12-28</td>        <td align="center">31</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#43ce17;color:black;">优</span></td>        <td align="center">11</td>        <td align="center">18</td>        <td align="center" class="hidden-xs">11</td>        <td align="center" class="hidden-xs">0.3</td>        <td align="center" class="hidden-xs">21</td>        <td align="center" class="hidden-xs">61</td>      </tr>      <tr>        <td align="center">2013-12-29</td>        <td align="center">78</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">58</td>        <td align="center">87</td>        <td align="center" class="hidden-xs">48</td>        <td align="center" class="hidden-xs">1.7</td>        <td align="center" class="hidden-xs">76</td>        <td align="center" class="hidden-xs">30</td>      </tr>      <tr>        <td align="center">2013-12-30</td>        <td align="center">67</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">43</td>        <td align="center">84</td>        <td align="center" class="hidden-xs">28</td>        <td align="center" class="hidden-xs">1.1</td>        <td align="center" class="hidden-xs">53</td>        <td align="center" class="hidden-xs">59</td>      </tr>      <tr>        <td align="center">2013-12-31</td>        <td align="center">99</td>        <td align="center"><span style="display:block;width:60px;text-align:center;background-color:#efdc31;color:black;">良</span></td>        <td align="center">50</td>        <td align="center">148</td>        <td align="center" class="hidden-xs">23</td>        <td align="center" class="hidden-xs">1.2</td>        <td align="center" class="hidden-xs">49</td>        <td align="center" class="hidden-xs">63</td>      </tr></tbody></table>
+  <span style="color:gray;font-size:12px">数值单位：μg/m3(CO为mg/m3)<br></span>
+  <span style="color:gray;font-size:12px">每日AQI数据和PM2.5浓度数据是本站根据当天环保总站每小时数据计算求平均的结果，存在丢数据场景，仅供参考。如果数据无法正常显示，请尝试使用<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=0&amp;rsv_idx=1&amp;tn=baidu&amp;wd=chrome&amp;rsv_pq=b4d98b8400009b26&amp;rsv_t=f897l1tNmVRDDbamciZKvfBjKCHNJJYE3cj9vlWycNYtZeFznk5l8XCwW%2FM&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_sug3=2&amp;rsv_sug1=2&amp;rsv_sug7=100" target="_blank">chrome</a>浏览器。</span>
+  <div id="container" style="min-width:200px;height:380px;" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 868px; height: 380px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 12px; touch-action: none;"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="868" height="380"><desc>Created with Highcharts 3.0.9</desc><defs><clipPath id="highcharts-1"><rect fill="none" x="0" y="0" width="785" height="263"></rect></clipPath><clipPath id="highcharts-2"><rect fill="none" x="0" y="0" width="149" height="263"></rect></clipPath><clipPath id="highcharts-3"><rect rx="0" ry="0" fill="none" x="-99" y="-54" width="248" height="380"></rect></clipPath></defs><rect rx="5" ry="5" fill="#FFFFFF" x="0" y="0" width="868" height="380"></rect><path fill="rgb(0,254,3)" d="M 63 317.5 L 848 317.5 848 284.5 63 284.5" fill-opacity="0.8"></path><text x="73" y="307" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#606060;fill:#606060;" transform="translate(0,0)" visibility="visible"><tspan x="73">优</tspan></text><path fill="rgb(254,245,0)" d="M 63 283.5 L 848 283.5 848 251.5 63 251.5" fill-opacity="0.8"></path><text x="73" y="274" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#606060;fill:#606060;" transform="translate(0,0)" visibility="visible"><tspan x="73">良</tspan></text><path fill="rgb(254,125,0)" d="M 63 251.5 L 848 251.5 848 218.5 63 218.5" fill-opacity="0.8"></path><text x="73" y="241" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#606060;fill:#606060;" transform="translate(0,0)" visibility="visible"><tspan x="73">轻度污染</tspan></text><path fill="rgb(255,3,3)" d="M 63 218.5 L 848 218.5 848 186.5 63 186.5" fill-opacity="0.8"></path><text x="73" y="209" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#606060;fill:#606060;" transform="translate(0,0)" visibility="visible"><tspan x="73">中度污染</tspan></text><path fill="rgb(188,3,205)" d="M 63 185.5 L 848 185.5 848 120.5 63 120.5" fill-opacity="0.8"></path><text x="73" y="159" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#606060;fill:#606060;" transform="translate(0,0)" visibility="visible"><tspan x="73">重度污染</tspan></text><path fill="rgb(72,0,78)" d="M 63 119.5 L 848 119.5 848 54.5 63 54.5" fill-opacity="0.8"></path><text x="73" y="93" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#606060;fill:#606060;" transform="translate(0,0)" visibility="visible"><tspan x="73">严重污染</tspan></text><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 63 53.5 L 848 53.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 63 120.5 L 848 120.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 63 186.5 L 848 186.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 63 251.5 L 848 251.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 63 317.5 L 848 317.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 113.5 317 L 113.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 166.5 317 L 166.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 219.5 317 L 219.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 272.5 317 L 272.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 325.5 317 L 325.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 378.5 317 L 378.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 431.5 317 L 431.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 484.5 317 L 484.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 537.5 317 L 537.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 591.5 317 L 591.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 644.5 317 L 644.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 697.5 317 L 697.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 750.5 317 L 750.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 803.5 317 L 803.5 322" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 63 317.5 L 848 317.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="24.125" y="185.5" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#4d759e;font-weight:bold;fill:#4d759e;" zIndex="7" text-anchor="middle" transform="translate(0,0) rotate(270 24.125 185.5)" visibility="visible"><tspan x="24.125">空气质量指数(AQI)</tspan></text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(63,54) scale(1 1)" clip-path="url(#highcharts-2)"><path fill="none" d="M 7.696078431372549 169.635 C 7.696078431372549 169.635 23.618999323867477 206.455 34.2342799188641 206.455 C 44.849560513860716 206.455 50.15720081135903 191.33249999999998 60.772481406355645 191.33249999999998 C 71.38776200135227 191.33249999999998 76.69540229885057 226.18 87.3106828938472 226.18 C 97.9259634888438 226.18 103.23360378634213 182.785 113.84888438133875 151.8825 C 124.46416497633535 120.98000000000002 129.77180527383368 71.66750000000002 140.3870858688303 71.66750000000002 C 151.00236646382692 71.66750000000002 156.3100067613252 81.53 166.92528735632183 116.3775 C 177.54056795131845 151.225 182.84820824881677 245.905 193.4634888438134 245.905 C 204.07876943881 245.905 209.3864097363083 233.4125 220.00169033130493 233.4125 C 230.61697092630158 233.4125 235.92461122379987 242.6175 246.5398918187965 243.275 C 257.15517241379314 243.9325 262.4628127112914 243.9325 273.07809330628805 243.9325 C 283.69337390128464 243.9325 289.0010141987829 219.60500000000002 299.61629479377956 219.60500000000002 C 310.23157538877615 219.60500000000002 315.5392156862745 226.18 326.1544962812711 226.18 C 336.76977687626777 226.18 342.0774171737661 226.18 352.6926977687627 220.92000000000002 C 363.30797836375933 215.66000000000003 368.6156186612576 174.895 379.23089925625425 174.895 C 389.84617985125084 174.895 395.15382014874916 198.69650000000004 405.76910074374575 210.4 C 416.3843813387424 222.10350000000005 421.69202163624067 233.4125 432.3073022312373 233.4125 C 442.9225828262339 233.4125 448.23022312373223 221.5775 458.8455037187289 221.5775 C 469.4607843137255 221.5775 474.7684246112238 233.4125 485.38370520622044 233.4125 C 495.9989858012171 233.4125 501.30662609871536 226.706 511.921906693712 209.085 C 522.5371872887087 191.46400000000003 527.8448275862069 145.3075 538.4601081812035 145.3075 C 549.0753887762002 145.3075 554.3830290736985 153.85500000000002 564.9983096686951 153.85500000000002 C 575.6135902636918 153.85500000000002 580.92123056119 86.1325 591.5365111561866 86.1325 C 602.1517917511832 86.1325 607.4594320486815 87.57899999999998 618.0747126436781 119.0075 C 628.6899932386748 150.43599999999998 633.9976335361731 238.6725 644.6129141311698 243.275 C 655.2281947261663 247.8775 660.5358350236647 247.8775 671.1511156186613 247.8775 C 681.7663962136579 247.8775 687.0740365111562 247.8775 697.6893171061528 242.6175 C 708.3045977011494 237.35750000000002 713.6122379986479 211.715 724.2275185936444 211.715 C 734.842799188641 211.715 740.1504394861392 218.9475 750.7657200811359 218.9475 C 761.3810006761325 218.9475 777.3039215686275 197.9075 777.3039215686275 197.9075" stroke="#008080" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -2.303921568627451 169.635 L 7.696078431372549 169.635 C 7.696078431372549 169.635 23.618999323867477 206.455 34.2342799188641 206.455 C 44.849560513860716 206.455 50.15720081135903 191.33249999999998 60.772481406355645 191.33249999999998 C 71.38776200135227 191.33249999999998 76.69540229885057 226.18 87.3106828938472 226.18 C 97.9259634888438 226.18 103.23360378634213 182.785 113.84888438133875 151.8825 C 124.46416497633535 120.98000000000002 129.77180527383368 71.66750000000002 140.3870858688303 71.66750000000002 C 151.00236646382692 71.66750000000002 156.3100067613252 81.53 166.92528735632183 116.3775 C 177.54056795131845 151.225 182.84820824881677 245.905 193.4634888438134 245.905 C 204.07876943881 245.905 209.3864097363083 233.4125 220.00169033130493 233.4125 C 230.61697092630158 233.4125 235.92461122379987 242.6175 246.5398918187965 243.275 C 257.15517241379314 243.9325 262.4628127112914 243.9325 273.07809330628805 243.9325 C 283.69337390128464 243.9325 289.0010141987829 219.60500000000002 299.61629479377956 219.60500000000002 C 310.23157538877615 219.60500000000002 315.5392156862745 226.18 326.1544962812711 226.18 C 336.76977687626777 226.18 342.0774171737661 226.18 352.6926977687627 220.92000000000002 C 363.30797836375933 215.66000000000003 368.6156186612576 174.895 379.23089925625425 174.895 C 389.84617985125084 174.895 395.15382014874916 198.69650000000004 405.76910074374575 210.4 C 416.3843813387424 222.10350000000005 421.69202163624067 233.4125 432.3073022312373 233.4125 C 442.9225828262339 233.4125 448.23022312373223 221.5775 458.8455037187289 221.5775 C 469.4607843137255 221.5775 474.7684246112238 233.4125 485.38370520622044 233.4125 C 495.9989858012171 233.4125 501.30662609871536 226.706 511.921906693712 209.085 C 522.5371872887087 191.46400000000003 527.8448275862069 145.3075 538.4601081812035 145.3075 C 549.0753887762002 145.3075 554.3830290736985 153.85500000000002 564.9983096686951 153.85500000000002 C 575.6135902636918 153.85500000000002 580.92123056119 86.1325 591.5365111561866 86.1325 C 602.1517917511832 86.1325 607.4594320486815 87.57899999999998 618.0747126436781 119.0075 C 628.6899932386748 150.43599999999998 633.9976335361731 238.6725 644.6129141311698 243.275 C 655.2281947261663 247.8775 660.5358350236647 247.8775 671.1511156186613 247.8775 C 681.7663962136579 247.8775 687.0740365111562 247.8775 697.6893171061528 242.6175 C 708.3045977011494 237.35750000000002 713.6122379986479 211.715 724.2275185936444 211.715 C 734.842799188641 211.715 740.1504394861392 218.9475 750.7657200811359 218.9475 C 761.3810006761325 218.9475 777.3039215686275 197.9075 777.3039215686275 197.9075 L 787.3039215686275 197.9075" stroke-linejoin="round" visibility="visible" stroke-opacity="0.0001" stroke="rgb(192,192,192)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(63,54) scale(1 1)" clip-path="url(#highcharts-3)" style=""><path fill="#008080" d="M 777 193.9075 C 782.328 193.9075 782.328 201.9075 777 201.9075 C 771.672 201.9075 771.672 193.9075 777 193.9075 Z"></path><path fill="#008080" d="M 750 214.9475 C 755.328 214.9475 755.328 222.9475 750 222.9475 C 744.672 222.9475 744.672 214.9475 750 214.9475 Z"></path><path fill="#008080" d="M 724 207.715 C 729.328 207.715 729.328 215.715 724 215.715 C 718.672 215.715 718.672 207.715 724 207.715 Z"></path><path fill="#008080" d="M 697 238.6175 C 702.328 238.6175 702.328 246.6175 697 246.6175 C 691.672 246.6175 691.672 238.6175 697 238.6175 Z"></path><path fill="#008080" d="M 671 243.8775 C 676.328 243.8775 676.328 251.8775 671 251.8775 C 665.672 251.8775 665.672 243.8775 671 243.8775 Z"></path><path fill="#008080" d="M 644 239.275 C 649.328 239.275 649.328 247.275 644 247.275 C 638.672 247.275 638.672 239.275 644 239.275 Z"></path><path fill="#008080" d="M 618 115.0075 C 623.328 115.0075 623.328 123.0075 618 123.0075 C 612.672 123.0075 612.672 115.0075 618 115.0075 Z"></path><path fill="#008080" d="M 591 82.1325 C 596.328 82.1325 596.328 90.1325 591 90.1325 C 585.672 90.1325 585.672 82.1325 591 82.1325 Z"></path><path fill="#008080" d="M 564 149.85500000000002 C 569.328 149.85500000000002 569.328 157.85500000000002 564 157.85500000000002 C 558.672 157.85500000000002 558.672 149.85500000000002 564 149.85500000000002 Z"></path><path fill="#008080" d="M 538 141.3075 C 543.328 141.3075 543.328 149.3075 538 149.3075 C 532.672 149.3075 532.672 141.3075 538 141.3075 Z"></path><path fill="#008080" d="M 511 205.085 C 516.328 205.085 516.328 213.085 511 213.085 C 505.672 213.085 505.672 205.085 511 205.085 Z"></path><path fill="#008080" d="M 485 229.4125 C 490.328 229.4125 490.328 237.4125 485 237.4125 C 479.672 237.4125 479.672 229.4125 485 229.4125 Z"></path><path fill="#008080" d="M 458 217.5775 C 463.328 217.5775 463.328 225.5775 458 225.5775 C 452.672 225.5775 452.672 217.5775 458 217.5775 Z"></path><path fill="#008080" d="M 432 229.4125 C 437.328 229.4125 437.328 237.4125 432 237.4125 C 426.672 237.4125 426.672 229.4125 432 229.4125 Z"></path><path fill="#008080" d="M 405 206.4 C 410.328 206.4 410.328 214.4 405 214.4 C 399.672 214.4 399.672 206.4 405 206.4 Z"></path><path fill="#008080" d="M 379 170.895 C 384.328 170.895 384.328 178.895 379 178.895 C 373.672 178.895 373.672 170.895 379 170.895 Z"></path><path fill="#008080" d="M 352 216.92000000000002 C 357.328 216.92000000000002 357.328 224.92000000000002 352 224.92000000000002 C 346.672 224.92000000000002 346.672 216.92000000000002 352 216.92000000000002 Z"></path><path fill="#008080" d="M 326 222.18 C 331.328 222.18 331.328 230.18 326 230.18 C 320.672 230.18 320.672 222.18 326 222.18 Z"></path><path fill="#008080" d="M 299 215.60500000000002 C 304.328 215.60500000000002 304.328 223.60500000000002 299 223.60500000000002 C 293.672 223.60500000000002 293.672 215.60500000000002 299 215.60500000000002 Z"></path><path fill="#008080" d="M 273 239.9325 C 278.328 239.9325 278.328 247.9325 273 247.9325 C 267.672 247.9325 267.672 239.9325 273 239.9325 Z"></path><path fill="#008080" d="M 246 239.275 C 251.328 239.275 251.328 247.275 246 247.275 C 240.672 247.275 240.672 239.275 246 239.275 Z"></path><path fill="#008080" d="M 220 229.4125 C 225.328 229.4125 225.328 237.4125 220 237.4125 C 214.672 237.4125 214.672 229.4125 220 229.4125 Z"></path><path fill="#008080" d="M 193 241.905 C 198.328 241.905 198.328 249.905 193 249.905 C 187.672 249.905 187.672 241.905 193 241.905 Z"></path><path fill="#008080" d="M 166 112.3775 C 171.328 112.3775 171.328 120.3775 166 120.3775 C 160.672 120.3775 160.672 112.3775 166 112.3775 Z"></path><path fill="#008080" d="M 140 67.66750000000002 C 145.328 67.66750000000002 145.328 75.66750000000002 140 75.66750000000002 C 134.672 75.66750000000002 134.672 67.66750000000002 140 67.66750000000002 Z"></path><path fill="#008080" d="M 113 147.8825 C 118.328 147.8825 118.328 155.8825 113 155.8825 C 107.672 155.8825 107.672 147.8825 113 147.8825 Z"></path><path fill="#008080" d="M 87 222.18 C 92.328 222.18 92.328 230.18 87 230.18 C 81.672 230.18 81.672 222.18 87 222.18 Z"></path><path fill="#008080" d="M 60 187.33249999999998 C 65.328 187.33249999999998 65.328 195.33249999999998 60 195.33249999999998 C 54.672 195.33249999999998 54.672 187.33249999999998 60 187.33249999999998 Z"></path><path fill="#008080" d="M 34 202.455 C 39.328 202.455 39.328 210.455 34 210.455 C 28.672 210.455 28.672 202.455 34 202.455 Z"></path><path fill="#008080" d="M 7 165.635 C 12.328 165.635 12.328 173.635 7 173.635 C 1.672 173.635 1.672 165.635 7 165.635 Z"></path></g></g><text x="429" y="25" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:16px;color:#274b6d;fill:#274b6d;" text-anchor="middle" class="highcharts-title" zIndex="4"><tspan x="429">北京2013年12月份空气质量指数（AQI）变化趋势</tspan></text><text x="429" y="40" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#4d759e;fill:#4d759e;" text-anchor="middle" class="highcharts-subtitle" zIndex="4"><tspan x="429">最小值：23 平均值：100 最大值：291</tspan></text><g class="highcharts-legend" zIndex="7" transform="translate(400,340)"><rect rx="5" ry="5" fill="none" x="0.5" y="0.5" width="57" height="24" stroke="#909090" stroke-width="1" visibility="visible"></rect><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#008080" stroke-width="2"></path><path fill="#008080" d="M 8 7 C 13.328 7 13.328 15 8 15 C 2.6719999999999997 15 2.6719999999999997 7 8 7 Z"></path><text x="21" y="15" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;cursor:pointer;color:#274b6d;fill:#274b6d;" text-anchor="start" zIndex="2"><tspan x="21">AQI</tspan></text></g></g></g></g><g class="highcharts-axis-labels" zIndex="7"><text x="113.82065584854632" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="113.82065584854632">12-04</tspan></text><text x="166.89705882352942" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="166.89705882352942">12-06</tspan></text><text x="219.97346179851252" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="219.97346179851252">12-08</tspan></text><text x="273.04986477349564" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="273.04986477349564">12-10</tspan></text><text x="326.1262677484787" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="326.1262677484787">12-12</tspan></text><text x="379.2026707234618" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="379.2026707234618">12-14</tspan></text><text x="432.2790736984449" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="432.2790736984449">12-16</tspan></text><text x="485.355476673428" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="485.355476673428">12-18</tspan></text><text x="538.431879648411" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="538.431879648411">12-20</tspan></text><text x="591.5082826233942" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="591.5082826233942">12-22</tspan></text><text x="644.5846855983773" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="644.5846855983773">12-24</tspan></text><text x="697.6610885733604" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="697.6610885733604">12-26</tspan></text><text x="750.7374915483435" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="750.7374915483435">12-28</tspan></text><text x="803.8138945233266" y="331" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="middle" opacity="1"><tspan x="803.8138945233266">12-30</tspan></text></g><g class="highcharts-axis-labels" zIndex="7"><text x="55" y="322.5" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="end" opacity="1"><tspan x="55">0</tspan></text><text x="55" y="256.75" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="end" opacity="1"><tspan x="55">100</tspan></text><text x="55" y="191" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="end" opacity="1"><tspan x="55">200</tspan></text><text x="55" y="125.25" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="end" opacity="1"><tspan x="55">300</tspan></text><text x="55" y="59.5" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;fill:#666;" text-anchor="end" opacity="1"><tspan x="55">400</tspan></text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-999)"><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></rect><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></rect><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></rect><rect rx="3" ry="3" fill="rgb(255,255,255)" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85"></rect></g></svg><div class="highcharts-tooltip" style="position: absolute; left: 0px; top: -999px;"><span style="position: absolute; white-space: nowrap; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: rgb(51, 51, 51); margin-left: 0px; margin-top: 0px; left: 8px; top: 8px;" zindex="1"></span></div></div></div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12" style="padding:0 5px">
+      <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="text-align:center">北京2013年12月份统计数据</h3>
+      </div>
+      <div>
+        <div id="piecontainer" style="height:200px;" data-highcharts-chart="1"><div class="highcharts-container" id="highcharts-4" style="position: relative; overflow: hidden; width: 281px; height: 200px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 12px; touch-action: none;"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="281" height="200"><desc>Created with Highcharts 3.0.9</desc><defs><clipPath id="highcharts-5"><rect fill="none" x="0" y="0" width="261" height="175"></rect></clipPath></defs><rect rx="5" ry="5" fill="#FFFFFF" x="0" y="0" width="281" height="200"></rect><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(10,10) scale(1 1)" style="cursor:pointer;"><path fill="none" d="M 219.3393935387457 35.801609312017206 C 214.3393935387457 35.801609312017206 207.8672575837461 40.50389133035699 198.96807064562168 46.969529105574196 L 190.06888370749726 53.4351668807914" stroke="#000000" stroke-width="1" visibility="visible"></path><path fill="none" d="M 161.5713339879477 165.5507954201984 C 156.5713339879477 165.5507954201984 155.73510628180637 157.59462025725225 154.58529318586218 146.65487940820123 L 153.435480089918 135.7151385591502" stroke="#000000" stroke-width="1" visibility="visible"></path><path fill="none" d="M 62.79189673982795 101.04875864705629 C 67.79189673982795 101.04875864705629 75.61707754569838 99.38546512051423 86.37670115377024 97.09843652151886 L 97.1363247618421 94.8114079225235" stroke="#000000" stroke-width="1" visibility="visible"></path><path fill="none" d="M 68.0892724733067 50.64759526778442 C 73.0892724733067 50.64759526778442 80.39763613444751 53.90148841239082 90.44663616851612 58.375591486224614 L 100.49563620258473 62.84969456005841" stroke="#000000" stroke-width="1" visibility="visible"></path><path fill="none" d="M 109.64759526778434 9.089272473306753 C 114.64759526778434 9.089272473306753 117.90148841239072 16.39763613444756 122.37559148622454 26.446636168516164 L 126.84969456005835 36.49563620258477" stroke="#000000" stroke-width="1" visibility="visible"></path><path fill="#43ce17" d="M 147.999618321909 74.12849571476917 A 9.871504292609544 9.871504292609544 0 0 1 151.44792611583574 74.750221489206 L 148 84 A 0 0 0 0 0 148 84 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" visibility="visible"></path><path fill="#efdc31" d="M 151.45717416884202 74.75367403963605 A 9.871504292609544 9.871504292609544 0 0 1 155.0412847440033 77.08140865834126 L 148 84 A 0 0 0 0 0 148 84 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" visibility="visible"></path><path fill="#fa0" d="M 155.04819981354976 77.08845340120709 A 9.871504292609544 9.871504292609544 0 0 1 155.81416985942377 77.96797327533427 L 148 84 A 0 0 0 0 0 148 84 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" visibility="visible"></path><path fill="#ff401a" d="M 155.8201979780585 77.97579045990445 A 9.871504292609544 9.871504292609544 0 0 1 156.4770857023676 78.94177748673276 L 148 84 A 0 0 0 0 0 148 84 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" visibility="visible"></path><path fill="#d20040" d="M 156.48213968549533 78.95025710013333 A 9.871504292609544 9.871504292609544 0 0 1 157.17063965874092 80.3467869965554 L 148 84 A 0 0 0 0 0 148 84 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" visibility="visible"></path></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(10,10) scale(1 1)"></g></g><g class="highcharts-data-labels highcharts-tracker" visibility="visible" zIndex="6" transform="translate(10,10) scale(1 1)" style="cursor:pointer;"><g zIndex="1" style="cursor:pointer;" transform="translate(224,26)" visibility="visible"><text x="3" y="15" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#000000;fill:#000000;" zIndex="1"><tspan style="font-weight:bold" x="3">优</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(167,156)" visibility="visible"><text x="3" y="15" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#000000;fill:#000000;" zIndex="1"><tspan style="font-weight:bold" x="3">良</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(11,91)" visibility="visible"><text x="3" y="15" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#000000;fill:#000000;" zIndex="1"><tspan style="font-weight:bold" x="3">轻度污染</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(16,41)" visibility="visible"><text x="3" y="15" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#000000;fill:#000000;" zIndex="1"><tspan style="font-weight:bold" x="3">中度污染</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(58,-1)" visibility="visible"><text x="3" y="15" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#000000;fill:#000000;" zIndex="1"><tspan style="font-weight:bold" x="3">重度污染</tspan></text></g></g><g class="highcharts-legend" zIndex="7"><rect rx="5" ry="5" fill="none" x="0.5" y="0.5" width="7" height="7" stroke="#909090" stroke-width="1" visibility="hidden"></rect><g zIndex="1"><g></g></g></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-999)"><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></rect><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></rect><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></rect><rect rx="3" ry="3" fill="rgb(255,255,255)" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85"></rect><text x="8" y="21" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#333333;fill:#333333;" zIndex="1"></text></g></svg></div></div>
+      </div>
+     </div>
+
+     <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title" style="text-align:center">北京其他月份历史数据</h3>
+        </div>
+        <div style="padding:10px 10px 10px 10px">
+           <ul class="unstyled1">
+             <li><a href="daydata.php?city=北京&amp;month=201312">2013年12月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201401">2014年01月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201402">2014年02月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201403">2014年03月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201404">2014年04月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201405">2014年05月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201406">2014年06月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201407">2014年07月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201408">2014年08月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201409">2014年09月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201410">2014年10月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201411">2014年11月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201412">2014年12月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201501">2015年01月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201502">2015年02月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201503">2015年03月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201504">2015年04月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201505">2015年05月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201506">2015年06月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201507">2015年07月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201508">2015年08月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201509">2015年09月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201510">2015年10月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201511">2015年11月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201512">2015年12月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201601">2016年01月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201602">2016年02月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201603">2016年03月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201604">2016年04月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201605">2016年05月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201606">2016年06月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201607">2016年07月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201608">2016年08月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201609">2016年09月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201610">2016年10月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201611">2016年11月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201612">2016年12月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201701">2017年01月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201702">2017年02月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201703">2017年03月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201704">2017年04月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201705">2017年05月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201706">2017年06月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201707">2017年07月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201708">2017年08月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201709">2017年09月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201710">2017年10月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201711">2017年11月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201712">2017年12月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201801">2018年01月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201802">2018年02月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201803">2018年03月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201804">2018年04月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201805">2018年05月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201806">2018年06月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201807">2018年07月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201808">2018年08月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201809">2018年09月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201810">2018年10月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201811">2018年11月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201812">2018年12月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201901">2019年01月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201902">2019年02月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201903">2019年03月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201904">2019年04月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201905">2019年05月</a></li>
+                          <li><a href="daydata.php?city=北京&amp;month=201906">2019年06月</a></li>
+                        </ul>
+        </div>
+     </div>
+
+     <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="text-align:center">全国主要城市历史数据</h3>
+      </div>
+      <div style="padding:10px 10px 0 10px">
+         <ul class="unstyled">
+            <li><a href="daydata.php?city=北京">北京</a></li>
+            <li><a href="daydata.php?city=上海">上海</a></li>
+            <li><a href="daydata.php?city=天津">天津</a></li>
+            <li><a href="daydata.php?city=重庆">重庆</a></li>
+            <li><a href="daydata.php?city=杭州">杭州</a></li>
+            <li><a href="daydata.php?city=哈尔滨">哈尔滨</a></li>
+            <li><a href="daydata.php?city=长春">长春</a></li>
+            <li><a href="daydata.php?city=沈阳">沈阳</a></li>
+            <li><a href="daydata.php?city=石家庄">石家庄</a></li>
+            <li><a href="daydata.php?city=太原">太原</a></li>
+            <li><a href="daydata.php?city=西安">西安</a></li>
+            <li><a href="daydata.php?city=济南">济南</a></li>
+            <li><a href="daydata.php?city=乌鲁木齐">乌鲁木齐</a></li>
+            <li><a href="daydata.php?city=拉萨">拉萨</a></li>
+            <li><a href="daydata.php?city=西宁">西宁</a></li>
+            <li><a href="daydata.php?city=兰州">兰州</a></li>
+            <li><a href="daydata.php?city=银川">银川</a></li>
+            <li><a href="daydata.php?city=郑州">郑州</a></li>
+            <li><a href="daydata.php?city=南京">南京</a></li>
+            <li><a href="daydata.php?city=武汉">武汉</a></li>
+            <li><a href="daydata.php?city=合肥">合肥</a></li>
+            <li><a href="daydata.php?city=福州">福州</a></li>
+            <li><a href="daydata.php?city=南昌">南昌</a></li>
+            <li><a href="daydata.php?city=长沙">长沙</a></li>
+            <li><a href="daydata.php?city=贵阳">贵阳</a></li>
+            <li><a href="daydata.php?city=成都">成都</a></li>
+            <li><a href="daydata.php?city=广州">广州</a></li>
+            <li><a href="daydata.php?city=昆明">昆明</a></li>
+            <li><a href="daydata.php?city=南宁">南宁</a></li>
+            <li><a href="daydata.php?city=深圳">深圳</a></li>
+        </ul>
+      </div>
+     </div>
+
+     <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title" style="text-align:center">微信公众平台</h3>
+      </div>
+      <div style="padding:10px 10px 10px 10px">
+         <a href="weixin.php"><img src="https://www.zq12369.com/resource/img/health/weixin/zhenqiweixin.jpg" width="100%" alt="真气环保二维码"></a>
+      </div>
+     </div>
+  </div>
+  </div>
+  
+<br>
+<hr style="margin-bottom:5px">
+<div class="container">
+	<div class="row link">
+	    <div class="col-sm-5" style="padding:0px">
+		版权所有 © 2013-2019 <a href="#" style="color:#333">PM2.5科学实验专家小组</a> 技术支持: <a href="http://weibo.com/wangjiezju/" target="_blank" style="color:#333">王杰</a>
+		<script type="text/javascript" async="" charset="utf-8" src="https://c.cnzz.com/core.php?web_id=1254317176&amp;t=q"></script><script type="text/javascript" async="" charset="utf-8" src="https://w.cnzz.com/c.php?id=1254317176&amp;async=1"></script><script type="text/javascript">
+      var cnzz_s_tag = document.createElement('script');
+      cnzz_s_tag.type = 'text/javascript';
+      cnzz_s_tag.async = true;
+      cnzz_s_tag.charset = 'utf-8';
+      cnzz_s_tag.src = 'https://w.cnzz.com/c.php?id=1254317176&async=1';
+      var root_s = document.getElementsByTagName('script')[0];
+      root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
+    </script>
+		</div>
+		<div class="col-sm-7" style="text-align:right;padding:0px">
+		<a href="https://www.aqistudy.cn/" target="_blank">分析平台</a>|
+		<a href="https://www.aqistudy.cn/historydata/">历史数据</a>|
+		<a href="https://www.zq12369.com/" target="_blank">真气网</a>|
+    <a href="https://map.zq12369.com/" target="_blank">风场地图</a>|
+		<a href="weixin.php">微信平台</a>|
+		<a href="sponsor.php">友情赞助</a>|
+		<a href="about.php">关于平台</a>
+		</div>
+	</div>
+</div></div>
+<script type="text/javascript" src="resource/js/jquery.min.js?v=1.5"></script>
+<script type="text/javascript" src="resource/highcharts/highcharts.js"></script>
+<script type="text/javascript">
+var city = '北京';
+var month = '201312';
+$(function () {
+
+  loaddata();
+  Highcharts.setOptions({
+    global: {
+        useUTC: false
+    }
+  });
+});
+
+var alfa = 0.8;
+
+var valuePlotBaud = [{ // Light air
+    from: 0,
+    to: 50,
+    color: 'rgba(0, 254, 3, ' + alfa + ')',
+    label: {
+      text: '优',
+      style: {
+        color: '#606060'
+      }
+    }
+  }, { // Light breeze
+    from: 51,
+    to: 100,
+    color: 'rgba(254, 245, 0, ' + alfa + ')',
+    label: {
+      text: '良',
+      style: {
+        color: '#606060'
+      }
+    }
+  }, { // Gentle breeze
+    from: 101,
+    to: 150,
+    color: 'rgba(254, 125, 0, ' + alfa + ')',
+    label: {
+      text: '轻度污染',
+      style: {
+        color: '#606060'
+      }
+    }
+  }, { // Moderate breeze
+    from: 151,
+    to: 200,
+    color: 'rgba(255, 3, 3, ' + alfa + ')',
+    label: {
+      text: '中度污染',
+      style: {
+        color: '#606060'
+      }
+    }
+  }, { // Fresh breeze
+    from: 201,
+    to: 300,
+    color: 'rgba(188, 3,205 , ' + alfa + ')',
+    label: {
+      text: '重度污染',
+      style: {
+        color: '#606060'
+      }
+    }
+  }, { // Strong breeze
+    from: 301,
+    to: 600,
+    color: 'rgba(72, 0, 78, ' + alfa + ')',
+    label: {
+      text: '严重污染',
+      style: {
+        color: '#606060'
+      }
+    }
+  }];
+
+function loaddata() {
+  var method = 'GETDAYDATA';
+  var param = {};
+  param.city = city;
+  param.month = month;
+  getServerData(method, param, function(obj) {
+    // console.log(obj);
+    obj = obj.data;
+    items = obj.items;
+    showTable(items);
+    var data = obj.datas;
+    var min = obj.min;
+    var avg = obj.avg;
+    var max = obj.max;
+    showHistoryChart(data, min, avg, max);
+    var level = obj.level;
+    showPieChart(level.level1, level.level2, level.level3, level.level4, level.level5, level.level6);
+  }, 6);
+}
+
+function showTable(items) {
+  items.forEach(function(item) {
+    $('.table tbody').append('\
+      <tr>\
+        <td align="center">' + item.time_point + '</td>\
+        <td align="center">' + item.aqi + '</td>\
+        <td align="center"><span style="display:block;width:60px;text-align:center;' + getAQIStyle(item.aqi) + '">' + item.quality + '</span></td>\
+        <td align="center">' + item.pm2_5 + '</td>\
+        <td align="center">' + item.pm10 + '</td>\
+        <td align="center" class="hidden-xs">' + item.so2 + '</td>\
+        <td align="center" class="hidden-xs">' + item.co + '</td>\
+        <td align="center" class="hidden-xs">' + item.no2 + '</td>\
+        <td align="center" class="hidden-xs">' + item.o3 + '</td>\
+      </tr>'
+      );
+  });
+}
+
+function showHistoryChart(data, min, avg, max) {
+  $('#container').highcharts({
+    chart: {
+      type: 'spline',
+            zoomType: '',
+            spacingRight: 20
+        },
+        title: {
+            text: '北京2013年12月份空气质量指数（AQI）变化趋势'
+        },
+        subtitle: {
+            text: '最小值：' + min + ' 平均值：' + avg + ' 最大值：' + max
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats:{
+            millisecond: '%H:%M:%S.%L',
+            second: '%H:%M:%S',
+            minute: '%H:%M',
+            hour: '%H:%M',
+            day: '%m-%d',
+            week: '%m-%d',
+            month: '%Y-%m',
+            year: '%Y'
+            }
+        },
+        yAxis: {
+            title: {
+                text: '空气质量指数(AQI)'
+            },
+            min:0,
+            plotBands:valuePlotBaud
+        },
+        tooltip: {
+            shared: true,
+            enabled: true,
+            useHTML: true,
+            formatter: function() {
+              tip = '' + Highcharts.dateFormat('%Y年%m月%d日', this.x) +'<br/>'
+                   + "<table width='160px' class='table-condensed table-bordered table-striped' style='margin:0px'>"
+                    for (i=this.points.length-1;i>=0;i--)
+                    {
+                      color = this.points[i].series.color;
+                    name = this.points[i].series.name;
+                    y = this.points[i].y;
+                    level = this.points[i].point.level;
+                    tip = tip +  "<tr><td width='80px' style='color:" + color + "'>" + name +"</td><td align='right'><b>"+ y + "</b></td><td align='center' style='" + getAQIStyle(y) + "'>"+ level + "</td></tr>";
+                    }
+                    tip = tip + "</table>";
+              return tip;
+
+            }
+        },
+        plotOptions:{
+          series:{
+            marker: {
+                  enabled: true
+              },
+            turboThreshold: 0
+          }
+        },
+        legend: {
+            enabled: true
+        },
+        credits : {
+            enabled:false
+        },
+        series: [{
+            name: 'AQI',
+            type:'spline',
+            color: '#008080',
+            data: data
+        }]
+    });
+}
+
+function showPieChart(level1, level2, level3, level4, level5, level6) {
+  var ratioArray = [];
+  if(level1>0)
+    {
+      ratioArray.push({
+        name:'优',
+        color:'#43ce17',
+        y:level1
+      });
+    }
+    if(level2>0)
+    {
+      ratioArray.push({
+        name:'良',
+        color:'#efdc31',
+        y:level2
+      });
+    }
+    if(level3>0)
+    {
+      ratioArray.push({
+        name:'轻度污染',
+        color:'#fa0',
+        y:level3
+      });
+    }
+    if(level4>0)
+    {
+      ratioArray.push({
+        name:'中度污染',
+        color:'#ff401a',
+        y:level4
+      });
+    }
+    if(level5>0)
+    {
+      ratioArray.push({
+        name:'重度污染',
+        color:'#d20040',
+        y:level5
+      });
+    }
+    if(level6>0)
+    {
+      ratioArray.push({
+        name:'严重污染',
+        color:'#9c0a4e',
+        y:level6
+      });
+    }
+
+  $('#piecontainer').highcharts({
+      chart: {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false
+      },
+      title: {
+          text: ''
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.y}</b>月({point.percentage:.1f}%)'
+      },
+      plotOptions: {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                  enabled: true,
+                  color: '#000000',
+                  connectorColor: '#000000',
+                  format: '<b>{point.name}</b>'
+              },
+              events: {
+              click: function(e) {
+
+              }
+          }
+          }
+      },
+      legend: {
+              enabled: true
+          },
+      credits: {
+              enabled:false
+       },
+      series: [{
+          type: 'pie',
+          name: '月数',
+          data: ratioArray
+      }]
+    });
+}
+
+function getAQIStyle(aqi)
+{
+   if(aqi<=0)
+   {
+     style = "background-color:#6E6E6E;color:black;";
+   }
+   else if(aqi<=50)
+   {
+     style = "background-color:#43ce17;color:black;";
+   }
+   else if(aqi<=100)
+   {
+    style = "background-color:#efdc31;color:black;";
+   }
+   else if(aqi<=150)
+   {
+    style = "background-color:#fa0;color:black;";
+   }
+   else if(aqi<=200)
+   {
+    style = "background-color:#ff401a;color:white;";
+   }
+   else if(aqi<=300)
+   {
+    style = "background-color:#d20040;color:white;";
+   }
+   else
+   {
+    style = "background-color:#9c0a4e;color:white;";
+   }
+   return style;
+}
+</script>
+
+</body></html>
